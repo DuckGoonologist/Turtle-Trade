@@ -1,0 +1,35 @@
+{
+  "rewrites": [
+    {
+      "source": "/robinhood/callback",
+      "destination": "/robinhood/callback/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/robinhood/callback(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'none'; script-src 'self' 'sha256-m1OsoLFRFUjfgpALXTQ/n+6IDxONglHzIwkgf/Xd8zs='; style-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; connect-src 'none'"
+        }
+      ]
+    }
+  ]
+}

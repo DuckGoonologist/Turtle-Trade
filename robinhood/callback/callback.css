@@ -1,0 +1,14 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #101b19; color: #edf5f0; }
+body { margin: 0; padding: 32px 18px; }
+main { max-width: 620px; margin: 6vh auto; background: #192824; padding: 36px; border: 1px solid #315448; border-radius: 20px; }
+.brand { color: #96d6ac; font-size: .8rem; letter-spacing: .18em; font-weight: 700; }
+h1 { line-height: 1.15; font-size: clamp(1.7rem, 5vw, 2.4rem); }
+p, li { line-height: 1.6; }
+label { display: block; margin-top: 24px; font-weight: 600; }
+textarea { box-sizing: border-box; width: 100%; margin: 10px 0; resize: vertical; padding: 12px; border: 1px solid #668172; border-radius: 8px; background: #0c1511; color: #d3eadd; overflow-wrap: anywhere; }
+button { cursor: pointer; border: 0; border-radius: 8px; padding: 13px 20px; color: #092513; background: #a4edb8; font-size: 1rem; font-weight: 700; }
+button:focus-visible, textarea:focus-visible { outline: 3px solid #e7c789; outline-offset: 3px; }
+li { margin-bottom: 10px; }
+.note { color: #b0c9bc; font-size: .9rem; }
+[hidden] { display: none !important; }
+@media (max-width: 480px) { main { padding: 24px 20px; margin-top: 2vh; } }

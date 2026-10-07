@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Connect Robinhood · Turtle Trade</title>
+  <script>window.turtleOAuthParams = new URLSearchParams(location.search); history.replaceState(null, "", location.pathname);</script>
+  <link rel="stylesheet" href="/robinhood/callback/callback.css">
+  <script src="/robinhood/callback/callback.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="brand">TURTLE TRADE</p>
+    <h1>Finish your Robinhood connection</h1>
+    <p id="status" role="status" aria-live="polite">Preparing your private completion code…</p>
+    <section id="completion" hidden>
+      <label for="ticket">Encrypted completion code</label>
+      <textarea id="ticket" readonly spellcheck="false" rows="5"></textarea>
+      <button id="copy" type="button">Copy completion code</button>
+      <ol>
+        <li>Return to the bot’s private reply in Discord.</li>
+        <li>Click <strong>Enter completion code</strong> and paste this code.</li>
+        <li>Run <strong>/robinhood connect</strong> again and confirm your masked account.</li>
+      </ol>
+      <p class="note">This code is encrypted for your bot’s current sign-in session. It expires shortly.
+        Robinhood passwords and access tokens are never displayed on this page.</p>
+    </section>
+    <p class="note">Start sign-in from <strong>/robinhood connect</strong> in an authorized Discord channel.</p>
+  </main>
+</body>
+</html>
